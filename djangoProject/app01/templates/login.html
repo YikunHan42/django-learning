@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>login</h1>
+    <form method="post" method="/login/">
+        {%  csrf_token %}
+
+        <input type="text" name="user" placeholder="id">
+        <input type="password" name="pwd" placeholder="pw">
+
+        <input type="submit" value="sub"/>
+        <span style="color: red;">{{ error_msg }}</span>
+    </form>
+</body>
+</html>
